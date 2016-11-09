@@ -1,0 +1,199 @@
+h1, input::-webkit-input-placeholder, button {
+  font-family: 'roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h2 {
+  padding: 20px;
+  color: #ecf0f1;
+}
+p {
+  margin: 20px 0 20px;
+}
+p:first-child {
+  margin-top: 0;
+}
+
+p.remember_me {
+  float: left;
+  line-height: 31px;
+}
+p.remember_me label {
+  font-size: 12px;
+  color: #777;
+  margin-left: 15px;
+  cursor: pointer;
+}
+p.remember_me input {
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+p.submit {
+  text-align: right;
+}
+
+body {
+  font-family: Sans-serif;
+}
+.a1{
+  color: #0000cc;
+  text-decoration: none;
+}
+.remember_me {
+    float: left;
+    line-height: 31px;
+}
+a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+.a1:hover {
+  color: #0033cc;
+}
+a:hover {
+  color: #0033cc;
+}
+
+.green {
+  color: #0000cc;
+}
+
+html { 
+  background: url("images/planet_half.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login {
+  position: relative;
+  width: 350px;
+}
+.regiter {
+  position: relative;
+  width: 350px;
+  display: none;
+}
+
+#right{
+     width: 300px;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:center;
+     margin-bottom: 5px;
+	 margin-right: 20px;
+}
+h1{
+  position: relative;
+  font-size: 18px;
+  background: #18aa8d;
+  color: white;
+}
+.header {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  background: #18aa8d;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+background-color: #FFFFFF;
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+input.inputlogin {
+  margin: 20px 20px 0 20px;
+  width: 220px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #0e6252;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #1abc9c;
+  font-size: 11px;
+  transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  background: #1abc9c;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/***************************************************************/
+/*************** Footer Bar Style ******************************/
+/***************************************************************/
+.footer-bar
+{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #111;
+    border-top: 1px solid #E62600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-bar .article-wrapper{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    float: left;
+    margin-left: 10%;
+}
+.footer-bar .article-link a, .footer-bar .article-link a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.site-link a, .site-link a:visited{
+    color: #888;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    float: right;
+    margin-right: 10%;
+    text-decoration: none;
+}
+.site-link a:hover{
+    color: #E62600;
+}

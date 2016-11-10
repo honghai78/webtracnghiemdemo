@@ -1,5 +1,5 @@
 body{
-	background-color: #B2C2D1;
+	background-color: #86C9EF;
 }
 
 img{
@@ -73,9 +73,9 @@ input[type=password]{
 		/* Border */
 	 
 	
-	-moz-box-shadow: 0 0 5px 5px #888;
-	-webkit-box-shadow: 0 0 5px 5px#888;
-	box-shadow: 0 0 5px 5px #888;
+	-moz-box-shadow: 0 0 5px 5px #005384;
+	-webkit-box-shadow: 0 0 5px 5px #005384;
+	box-shadow: 0 0 5px 5px #005384;
 	border:solid 1px #808080;
 	 
 }
@@ -106,9 +106,10 @@ input[type=password]{
 
 #logo{
 	position:relative;
-	top:61px;
-	width:450px;
-	height: 90px;
+	top: 50px;
+	width:auto;
+	left: 20px;
+	height: 100px;
 }
 #logo2{
 	position: absolute;
@@ -194,11 +195,20 @@ input[type=password]{
 	min-height: 250px;
 	 
 }
+#rightSide{
+	position: absolute;
+	top: 10px;
+	right:10px;
+	width: 180px;
+	float: right;
+	min-height: 250px;
+	 
+}
 #mainContent{	
 	position: relative;
 	top: 10px;
 	left:200px;
-	width: 790px;
+	width: 600px;
 	min-height: 520px;
 	
 	 
@@ -220,6 +230,24 @@ input[type=password]{
 	 
 }
 #leftSide .group-box-content ul li:hover{	 
+	 background-color:#d4d4d4;	 
+	 
+}
+
+#rightSide .group-box-content ul{
+	list-style: none;	
+	margin: 0px;
+	padding: 10px;	 
+}
+#rightSide .group-box-content ul li{
+	text-shadow: 0 1px 0 #fff;
+	font-weight:bold;
+	line-height: 24px;
+	padding-left: 4px;
+	cursor: pointer;
+	 
+}
+#rightSide .group-box-content ul li:hover{	 
 	 background-color:#d4d4d4;	 
 	 
 }
@@ -385,26 +413,6 @@ div.success  {
 	border: 2px solid rgba(82,82,82,.7);	
 	background-color: #fff;
 	cursor: pointer;	  
-}
-
-#dialogUpdateSV{
-	font-size: 12pt;
-}
-
-#dialogUpdateSV label {
-	width: 100px;
-	/* border: 1px solid #000; */
-	display: block;
-	float:left;
-	text-align: right;
-	padding-top: 10px;
-	font-size: 12pt;
-}
-
-#dialogUpdateSV input[type=text],
-#dialogUpdateSV input[type=password]  {
-	 font-size: 12pt;
-	height: 16px;
 }
  
 

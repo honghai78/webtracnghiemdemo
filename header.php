@@ -7,7 +7,7 @@
 		
 	<?php 
 		if (!isset($_SESSION["loggedin"])){
-			Header("Location: login.php");
+			auto_login();
 		}
 	
 	?>
@@ -28,8 +28,8 @@
 <body>
 	<div id="pageWrapper">
 		<div id="header">
-			<img id="logo" src="<?php echo IMAGES_DIR;?>/logo.png" alt="Khoa Khoa Học Tự Nhiên - Đai Học Cần Thơ" />
-			<h1 id="siteTitle"> Hệ Thống Quản Lý Đào Tạo </h1>
+			<img id="logo" src="<?php echo IMAGES_DIR;?>/logo.png" alt="Trắc Nghiệm Trực Tuyến" />
+			<h1 id="siteTitle"> Trắc Nghiệm Trực Tuyến </h1>
 			<img id="logo2" src="<?php echo IMAGES_DIR;?>/logo2.png" />		
 		</div> <!-- End of header -->
 		
@@ -37,7 +37,7 @@
 		<div  id="menu" > 
 			<a href="index.php">Trang chủ</a> |  
 			<a href="timkiem.php">Tìm kiếm</a>	|
-			<a href="gioithieu.php">Giới thiệu</a>		 
+			<a href="phanhoi.php">Phản hồi</a>		 
 		</div>		 
 		<div  id="login" > 
 			<?php 
@@ -47,7 +47,6 @@
 					echo "Xin chào ". $_SESSION["HoTen"];
 					echo " | <a href='login.php?logut' id='aLogout'>Thoát</a>";	
 				}else {
-					
 					echo "<a href='login.php'>Đăng nhập</a>";
 				}
 			?>
@@ -60,13 +59,44 @@
 						<div class="title">DANH MỤC</div>  
 						<div class="group-box-content">
 							<ul>								
-								<li> <a href="khoa.php"> Khoa - Viện</a> </li>
-								<li> <a href="giangvien.php">Giảng Viên</a> </li>
-								<li> <a href="sinhvien.php">Sinh Viên</a> </li>
-								<li> <a href="nganh.php">Ngành Đào Tạo</a> </li>
-								<li> <a href="lopchuyennganh.php">Lớp Chuyên Ngành</a> </li>
-								<li> <a href="lophocphan.php">Lớp Học Phần</a> </li>
-								<li> <a href="monhoc.php">Môn Học</a> </li>
+								<li> <a href="mon.php">Tiếng Anh</a> </li>
+								<li> <a href="mon.php">Toán</a> </li>
+								<li> <a href="mon.php">Vật Lý</a> </li>
+								<li> <a href="mon.php">Hóa Học</a> </li>
+								<li> <a href="mon.php">Sinh Học</a> </li>
+								<li> <a href="mon.php">Tin Học</a> </li>
+								<li> <a href="mon.php">Tổng Hợp</a> </li>
+							</ul>						
+						</div>						
+				</div>
+				<div class="group-box"> 
+						<div class="title">Menu</div> 
+						<div class="group-box-content">
+						<ul>							
+							<li> <a href="index.php">Link 1</a> </li>
+							<li> <a href="index.php">Link 2</a> </li>
+							<li> <a href="index.php">Link 3</a> </li>
+							<li> <a href="index.php">Link 4</a> </li>
+							<li> <a href="index.php">Link 5</a> </li>
+							<li> <a href="index.php">Link 6</a> </li>
+							<li> <a href="index.php">Link 7</a> </li>
+						</ul>						
+						</div>						
+				</div>				 
+			</div> <!-- End of Left Side -->
+			
+			<div id="rightSide" > 
+				<div class="group-box" id="danhmuc"> 
+						<div class="title">DANH MỤC</div>  
+						<div class="group-box-content">
+							<ul>								
+								<li> <a href="mon.php">Tiếng Anh</a> </li>
+								<li> <a href="mon.php">Toán</a> </li>
+								<li> <a href="mon.php">Vật Lý</a> </li>
+								<li> <a href="mon.php">Hóa Học</a> </li>
+								<li> <a href="mon.php">Sinh Học</a> </li>
+								<li> <a href="mon.php">Tin Học</a> </li>
+								<li> <a href="mon.php">Tổng Hợp</a> </li>
 							</ul>						
 						</div>						
 				</div>

@@ -69,7 +69,7 @@ $db = $GLOBALS["db"];
 		
 			$sql = "SELECT username as User, password as MatKhau".
 				" FROM dbo_taikhoan WHERE username='".$user."' ".
-					" AND password ='".$pass."'";
+					" AND password ='".md5($pass)."'";
 		
 		$result = $db->query($sql);
 		// nếu xác thực thành công
@@ -106,7 +106,7 @@ $db = $GLOBALS["db"];
 		$email 	= $_POST["txtEmail"];
 		
 			$sql = "INSERT INTO dbo_taikhoan (username, password, email, admin_permission, status, tra_loi_dung, tra_loi_sai)". 
-					"VALUES ('".$userRe."','".$passRe."','".$email."','0','0','0','0')";
+					"VALUES ('".$userRe."','".md5($passRe)."','".$email."','0','0','0','0')";
 					
 			$sql_test_user_name = "SELECT username".
 				" FROM dbo_taikhoan WHERE username='".$userRe."' ";
